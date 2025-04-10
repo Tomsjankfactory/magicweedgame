@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://b716lvvvv27qi"]
+
+[ext_resource type="Script" path="res://InventorySlot.gd" id="1_gxbdb"]
+[ext_resource type="Texture2D" uid="uid://c2hcoyspb5soe" path="res://Workbenches/ME_Singles_Subway_and_Train_Station_32x32_Black_Baggage.png" id="2_jtjhl"]
+
+[node name="InventorySlot" type="Button"]
+custom_minimum_size = Vector2(32, 32)
+script = ExtResource("1_gxbdb")
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_jtjhl")
+expand_mode = 1
+
+[node name="QuantityText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -23.0
+offset_right = -1.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.396078)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "334"
+horizontal_alignment = 2
+vertical_alignment = 2
